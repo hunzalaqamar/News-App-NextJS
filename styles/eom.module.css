@@ -1,9 +1,9 @@
-.main {
+.mainEOM {
   @apply flex h-screen flex-col;
 }
 
 .divInfo {
-  @apply flex-1 flex items-center flex-col mt-12;
+  @apply flex-1 flex items-center flex-col mt-20;
 }
 
 .divInfo h1 {
@@ -19,9 +19,9 @@
 }
 
 .divInfo img {
-  @apply mt-5 w-3/4 rounded-full ml-12;
+  @apply mt-5 w-3/4 rounded-full mx-auto;
 }
 
 .divInfo p {
-  @apply mt-4 -ml-5;
+  @apply mt-6 mx-auto;
 }

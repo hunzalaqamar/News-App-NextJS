@@ -1,4 +1,4 @@
-.main {
+.mainFeed {
   @apply flex h-screen flex-col;
 }
 
@@ -11,7 +11,11 @@
 }
 
 .articleInfo h1 {
-  @apply cursor-pointer text-center text-sm mb-12;
+  @apply cursor-pointer text-center text-2xl mb-12;
+}
+
+.articleInfo img {
+  @apply w-full mt-6 cursor-pointer;
 }
 
 .pagination {

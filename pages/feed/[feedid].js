@@ -6,9 +6,12 @@ export const Feed = ({ pageNumber, articles }) => {
   const router = useRouter();
 
   return (
-    <div className={styles.main}>
+    <div className={styles.mainFeed}>
       <Toolbar />
       <div className={styles.articleMain}>
+        <h6 className="mb-12 text-sm">
+          FYI: Click on the article title or the image to open the whole article
+        </h6>
         {articles.map((article, index) => (
           <div className={styles.articleInfo} key={index}>
             <h1 onClick={() => window.open(article.url, "_blank")}>
@@ -16,7 +19,10 @@ export const Feed = ({ pageNumber, articles }) => {
             </h1>
             <p>{article.description}</p>
             {!!article.urlToImage && (
-              <img className="w-full" src={article.urlToImage} />
+              <img
+                onClick={() => window.open(article.url, "_blank")}
+                src={article.urlToImage}
+              />
             )}
           </div>
         ))}

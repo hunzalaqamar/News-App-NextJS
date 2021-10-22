@@ -2,9 +2,8 @@ import Toolbar from "../components/Toolbar";
 import styles from "../styles/eom.module.css";
 
 export const EOM = ({ employee }) => {
-  console.log(employee);
   return (
-    <div className={styles.main}>
+    <div className={styles.mainEOM}>
       <Toolbar />
       <div className={styles.divInfo}>
         <h1>Employee of the Month</h1>

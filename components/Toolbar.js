@@ -1,28 +1,23 @@
 import { useRouter } from "next/router";
+import styles from "../styles/toolbar.module.css";
 
 export const Toolbar = () => {
   const router = useRouter();
 
   return (
-    <div className="flex w-full justify-center h-20">
-      <div className="m-8 cursor-pointer" onClick={() => router.push("/")}>
-        Home
-      </div>
-      <div
-        className="m-8 cursor-pointer"
-        onClick={() => router.push("/feed/1")}
-      >
-        Feed
-      </div>
-      <div className="m-8 cursor-pointer" onClick={() => router.push("/eom")}>
-        EOM
-      </div>
-      <div
-        className="m-8 cursor-pointer"
-        onClick={() => window.open("https://github.com/hunzalaqamar", "_blank")}
-      >
-        Github
-      </div>
+    <div className={styles.mainToolbar}>
+      <nav className={styles.nav}>
+        <div onClick={() => router.push("/")}>Home</div>
+        <div onClick={() => router.push("/feed/1")}>Feed</div>
+        <div onClick={() => router.push("/eom")}>EOM</div>
+        <div
+          onClick={() =>
+            window.open("https://github.com/hunzalaqamar", "_blank")
+          }
+        >
+          Github
+        </div>
+      </nav>
     </div>
   );
 };
