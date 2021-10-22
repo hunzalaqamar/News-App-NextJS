@@ -9,7 +9,7 @@ export const Feed = ({ pageNumber, articles }) => {
     <div className={styles.mainFeed}>
       <Toolbar />
       <div className={styles.articleMain}>
-        <h6 className="mb-12 text-sm">
+        <h6>
           FYI: Click on the article title or the image to open the whole article
         </h6>
         {articles.map((article, index) => (

@@ -6,6 +6,10 @@
   @apply flex mt-12 items-center flex-col;
 }
 
+.articleMain h6 {
+  @apply mb-12 text-sm text-center;
+}
+
 .articleInfo {
   @apply w-6/12 mb-12 pb-12 border-b border-solid border-black;
 }
