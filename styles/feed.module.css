@@ -1,0 +1,27 @@
+.main {
+  @apply flex h-screen flex-col;
+}
+
+.articleMain {
+  @apply flex mt-12 items-center flex-col;
+}
+
+.articleInfo {
+  @apply w-6/12 mb-12 pb-12 border-b border-solid border-black;
+}
+
+.articleInfo h1 {
+  @apply cursor-pointer text-center text-sm mb-12;
+}
+
+.pagination {
+  @apply w-full flex justify-center;
+}
+
+.pagination .active {
+  @apply cursor-not-allowed text-gray-600;
+}
+
+.pagination .disabled {
+  @apply cursor-pointer;
+}
