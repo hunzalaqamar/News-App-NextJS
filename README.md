@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+### the App is also deployed on vercel -> https://newsapp-jz3dr6v8u-hunzalaqamar.vercel.app/
+
 First, run the development server:
 
 ```bash
